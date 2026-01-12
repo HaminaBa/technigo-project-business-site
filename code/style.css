@@ -115,6 +115,7 @@ h6 {
   border-radius: 5px;
   font-size: 1rem;
   color: #333366;
+  height: 2.5rem;
 }
 
 .form-row input[type="text"]:focus,
