@@ -1,5 +1,5 @@
 html {
-  background: #F7F3EB;
+  background: #f7f3eb;
   color: #333366;
   margin: 20px 20px;
 }
@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 nav {
@@ -28,7 +28,7 @@ nav {
 h1 {
   font-size: 2rem;
   margin-bottom: 30px;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
 }
 
 h2,
@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   margin-top: 0;
   margin-bottom: 3rem;
 }
@@ -101,7 +101,7 @@ h6 {
 
 .form-label.required::after {
   content: " *";
-  color: #FF3B2E;
+  color: #ff3b2e;
 }
 
 .form-row input[type="text"],
@@ -161,14 +161,13 @@ h6 {
   width: 100%;
   max-width: 300px;
   color: #ffffff;
-  background-color: #FF3B2E;
+  background-color: #ff3b2e;
   cursor: pointer;
 }
 
 .submit:hover {
   background-color: #333366;
 }
-
 
 /* Tablet breakpoint: 768px */
 @media (min-width: 768px) {
