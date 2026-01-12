@@ -1,0 +1,217 @@
+html {
+  background: #F7F3EB;
+  color: #333366;
+  margin: 20px 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 80px;
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.hero {
+  position: relative;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.main-headline {
+  position: absolute;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  max-width: 80%;
+  text-align: center;
+  margin: 0;
+}
+
+.signup-section {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  margin: 2rem auto;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.form-label {
+  width: 100%;
+  text-align: left;
+}
+
+.form-label.required::after {
+  content: " *";
+  color: #FF3B2E;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row select {
+  max-width: none;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #846699;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333366;
+}
+
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row input[type="password"]:focus,
+.form-row select:focus {
+  border-color: #333366;
+  outline: none;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.option input[type="radio"],
+.option input[type="checkbox"] {
+  margin: 0;
+  accent-color: #333366;
+  flex: 0 0 auto;
+}
+
+.submit-button {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  padding: 0.75rem;
+  border: 2px solid #846699;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+  color: #ffffff;
+  background-color: #FF3B2E;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #333366;
+}
+
+
+/* Tablet breakpoint: 768px */
+@media (min-width: 768px) {
+  .hero {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .form-label {
+    width: 30%;
+    flex-shrink: 0;
+  }
+
+  .form-row input[type="text"],
+  .form-row input[type="email"],
+  .form-row input[type="password"],
+  .form-row select {
+    flex: 1;
+    max-width: 300px;
+  }
+
+  .options {
+    flex: 1;
+    max-width: 300px;
+  }
+}
+
+/* Desktop breakpoint: 1024px */
+@media (min-width: 1024px) {
+  .hero {
+    height: 40vh;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+}
