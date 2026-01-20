@@ -14,21 +14,28 @@
 
 <body>
   <header>
-    <nav><a class="logo-link" href="#"><img class="logo" src="./assets/storytimes-logo.png" alt="Logo" /></a></nav>
+    <nav>
+      <a class="logo-link" href="#">
+        <img class="logo" src="./assets/storytimes-logo.png" alt="Logo" />
+      </a>
+    </nav>
   </header>
 
   <section class="hero">
     <div class="hero-image">
       <picture>
-        <source srcset="./assets/owl-and-mice.png" media="(min-width: 768px)">
-        <img src="./assets/owl-and-mice-small.png" alt="Bedtime stories illustration">
+        <source 
+          srcset="./assets/owl-and-mice.png" 
+          media="(min-width: 768px)">
+        <img 
+          src="./assets/owl-and-mice-small.png" 
+          alt="Bedtime stories illustration">
       </picture>
     </div>
     <h1 class="main-headline">Get your daily bedtime story - in time</h1>
   </section>
   <section class="signup-section">
     <h2>Sign up for our daily bedtime story recommendations</h2>
-
     <form class="signup-form" action="http://httpbin.org/anything" method="POST">
       <div class="form-row">
         <label class="form-label required" for="fname">Your first name:</label>
