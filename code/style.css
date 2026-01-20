@@ -41,7 +41,7 @@ h6 {
   margin-bottom: 3rem;
 }
 
-.hero {
+.hero-section {
   position: relative;
   height: 30vh;
   display: flex;
@@ -99,6 +99,7 @@ h6 {
   text-align: left;
 }
 
+/* Adds * to show field as required */
 .form-label.required::after {
   content: " *";
   color: #ff3b2e;
@@ -126,22 +127,22 @@ h6 {
   outline: none;
 }
 
-.options {
+.form-options {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   width: 100%;
 }
 
-.option {
+.form-option {
   display: flex;
   align-items: center;
   gap: 1rem;
   cursor: pointer;
 }
 
-.option input[type="radio"],
-.option input[type="checkbox"] {
+.form-option input[type="radio"],
+.form-option input[type="checkbox"] {
   margin: 0;
   accent-color: #333366;
   flex: 0 0 auto;
@@ -199,7 +200,7 @@ h6 {
     max-width: 300px;
   }
 
-  .options {
+  .form-options {
     flex: 1;
     max-width: 300px;
   }
@@ -207,7 +208,7 @@ h6 {
 
 /* Desktop breakpoint: 1024px */
 @media (min-width: 1024px) {
-  .hero {
+  .hero-section {
     height: 40vh;
   }
 
